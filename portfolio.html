@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amirul Hasyim's Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Great Vibe', cursive;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background: url('images/.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #3e2e2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding-top: 8rem;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            font-family: 'Great Vibe', cursive;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 5rem;
+            background-color: rgba(216, 202, 174, 0.9); 
+        }
+
+        .logo {
+            font-family: 'Great Vibe', cursive;
+            color: #3e2e2e;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .navmenu {
+            display: flex;
+        }
+
+        .navmenu a {
+            margin: 0 1.5rem;
+            color: #3e2e2e;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .navmenu a:hover {
+            color: #a52a2a;
+        }
+
+        .intro-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .intro-section img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+
+        section {
+            width: 100%;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-in-out;
+        }
+
+        .favorites {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .favorite-item {
+            width: 200px;
+            text-align: center;
+        }
+
+        .favorite-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #a52a2a;
+            margin-bottom: 1rem;
+        }
+
+        p, ul {
+            color: #3e2e2e;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 1rem;
+            background-color: rgba(216, 202, 174, 0.9);
+            width: 100%;
+            text-align: center;
+        }
+
+        footer p {
+            color: #3e2e2e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Amirul Hasyim</a>
+            <nav class="navmenu">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="achievement.html">Achievement</a>
+                <a href="education.html">Education</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <div class="intro-section" id="about">
+                <img src="images/amirul%203.jpg" alt="Picture of Amirul">
+                <p>
+                 "If the world was ending then i would rather be next to you and die with a smile" <br>
+                </p>
+            </div>
+
+            <section id="favorites">
+                <h2>Favorites</h2>
+                <div class="favorites">
+                    <div class="favorite-item">
+                        <img src="images/canai.jpg" alt="Roti Canai Telur Cheese">
+                        <h3>Favorite Food</h3>
+                        <p>Roti Canai Telur Cheese & Laksa Sarawak 126</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/milo.jpg" alt="Milo Peng">
+                        <h3>Favorite Drink</h3>
+                        <p>Milo Peng & Chai Peng</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/fc.avif" alt="EA FC Sports 25">
+                        <h3>Favorite Video Games</h3>
+                        <p> EA FC Sports 25 & Riot Games: Valorant</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/peaky%20blinders.avif" alt="Netflix : Peaky Blinders">
+                        <h3>Favorite Movies/TV Shows</h3>
+                        <p>Peaky Blinders, Suits, John Wick</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="songs">
+                <h3>Favorite Songs</h3>
+                <ul>
+                    <li>Here With Me - d4vd</li> <br><audio controls><source src="song%201.mp3" type="audio/mp3"></br>
+                </ul>
+            </section>
+
+            <section id="hobbies">
+                <h3>Hobbies & Talents</h3>
+                <p>
+                    Reading (Manga/Manwha),
+                    Playing Video Games &
+                    Food hunting <br> 
+
+                    Fragrance Hunting (cosmetics),
+                    Can make delicious Milo Peng,
+                    Make people laugh (at my jokes) &
+                    Singing (private concerts)
+                    
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Amirul Hasyim </p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Fade in images and sections on scroll
+        window.addEventListener('scroll', function() {
+            const introImg = document.querySelector('.intro-section img');
+            const sections = document.querySelectorAll('section');
+            
+            // Fade in image
+            if (isInViewport(introImg)) {
+                introImg.style.opacity = 1;
+            }
+
+            // Fade in sections
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.style.opacity = 1;
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return rect.top <= window.innerHeight && rect.bottom >= 0;
+        }
+    </script>
+</body>
+</html>

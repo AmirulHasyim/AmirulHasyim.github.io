@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amirul Hasyim's Home Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background: url('images/.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #3e2e2e;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 5rem;
+            background-color: rgba(245, 241, 233, 0.9); /* Semi-transparent background */
+        }
+
+        .logo {
+            color: #3e2e2e;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .navmenu {
+            display: flex;
+        }
+
+        .navmenu a {
+            margin: 0 1.5rem;
+            color: #3e2e2e;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .navmenu a:hover {
+            color: #a52a2a;
+        }
+
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            padding: 8rem 5rem 2rem 5rem;
+            background-color: rgba(245, 241, 233, 0.8); 
+        }
+
+        .home-text {
+            max-width: 50%;
+        }
+
+        .home-text h2 {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #a52a2a;
+            margin-bottom: 0.5rem;
+        }
+
+        .home-text h3 {
+            font-size: 2rem;
+            color: #3e2e2e;
+            margin-bottom: 1rem;
+        }
+
+        .home-text p {
+            font-size: 1.2rem;
+            color: #3e2e2e;
+            margin-bottom: 2rem;
+        }
+
+        .home-img img {
+            width: 200%;
+            height: 200%;
+            max-width: 350px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Amirul Hasyim.</a>
+        <ul class="navmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="achievement.html">Achievement</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="images/amirul%202.jpg" alt="My Picture">
+        </div>
+        <div class="home-text">
+            <h2>Welcome To My Life</h2>
+            <h3>a Amirul Hasyim, website.</h3>
+            <p>Universiti Teknologi Mara (UiTM)</p>
+        </div>
+    </section>
+</body>
+</html>

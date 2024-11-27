@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amirul Hasyim's Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Great Vibe', cursive;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background: url('images/.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #3e2e2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding-top: 8rem;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            font-family: 'Great Vibe', cursive;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 5rem;
+            background-color: rgba(216, 202, 174, 0.9); 
+        }
+
+        .logo {
+            font-family: 'Great Vibe', cursive;
+            color: #3e2e2e;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .navmenu {
+            display: flex;
+        }
+
+        .navmenu a {
+            margin: 0 1.5rem;
+            color: #3e2e2e;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .navmenu a:hover {
+            color: #a52a2a;
+        }
+
+        .intro-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .intro-section img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+
+        section {
+            width: 100%;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-in-out;
+        }
+
+        .favorites {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .favorite-item {
+            width: 200px;
+            text-align: center;
+        }
+
+        .favorite-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #a52a2a;
+            margin-bottom: 1rem;
+        }
+
+        p, ul {
+            color: #3e2e2e;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 1rem;
+            background-color: rgba(216, 202, 174, 0.9);
+            width: 100%;
+            text-align: center;
+        }
+
+        footer p {
+            color: #3e2e2e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Amirul Hasyim</a>
+            <nav class="navmenu">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="achievement.html">Achievement</a>
+                <a href="education.html">Education</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <div class="intro-section" id="about">
+                <img src="images/amirul%205.jpg" alt="Picture of Amirul">
+            </div>
+
+            <section id="Primary School">
+                <h2>Primary School Years </h2>
+                <div class="favorites">
+                    <div class="favorite-item">
+                        <img src="images/primary4.jpg" alt="Primary 4">
+                        <h3>Primary 4</h3>
+                        <p></p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/primary3.jpg" alt="Primary 2">
+                        <h3>Primary 2</h3>
+                        <p></p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/primary2.jpg" alt="Primary 5">
+                        <h3>Primary 5</h3>
+                        <p> </p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/primary1.jpg" alt="Primary 6">
+                        <h3>Primary 6</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="HighSchool Years">
+                <h2> HighSchool Years </h2>
+                <div class="favorites">
+                    <div class="favorite-item">
+                        <img src="images/highschool1.jpg" alt="Form 5">
+                        <h3>Form 5 </h3>
+                        <p>2021</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/highschool2.jpg" alt="Form 5">
+                        <h3>Form 5</h3>
+                        <p>2021</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/highschool3.jpg" alt="Form 4">
+                        <h3>Form 4</h3>
+                        <p>2020 </p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/highschool4.jpg" alt="Form 4">
+                        <h3>Form 4 </h3>
+                        <p>Bald Phase</p>
+                    </div>
+                </div>
+            </section>     
+            
+            <section id="Family">
+                <h2> Family </h2>
+                <div class="favorites">
+                    <div class="favorite-item">
+                        <img src="images/fam1.jpg" alt="Family 1">
+                        <h3>Picture 1</h3>
+                        <p>Sister's Engagement Ceremony</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/fam2.jpg" alt="Family 2">
+                        <h3>Picture 2</h3>
+                        <p>Cousins Wedding</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/fam3.jpg" alt="Family 3">
+                        <h3>Picture 3</h3>
+                        <p>Late Grandmother's birthday celebration in 2019</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/fam4.jpg" alt="Family 4">
+                        <h3>Picture 4</h3>
+                        <p>Cousins Wedding</p>
+                    </div>
+                </div>
+            </section>  
+            
+            <section id="Friends">
+                <h2> Friends </h2>
+                <div class="favorites">
+                    <div class="favorite-item">
+                        <img src="images/friend1.jpg" alt="Wind Hole">
+                        <h3>Wind Hole</h3>
+                        <p></p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/friend4.jpg" alt="CDIM1105A">
+                        <h3>CDIM1105A</h3>
+                        <p></p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/friend3.jpg" alt="26536">
+                        <h3>26536 Gang</h3>
+                        <p> </p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/friend2.jpg" alt="UND">
+                        <h3>UND Gang</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </section>     
+                
+                <section id="My Jagiya">
+                <h2> My Jagiya </h2>
+                <div class="favorites">
+                    <div class="favorite-item">
+                        <img src="images/jagiya2.jpg" alt="Concert Date">
+                        <h3>Concert Date</h3>
+                        <p>Tentang Kita Concert</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/jagiya1.jpg" alt="Movie Date">
+                        <h3>Movie Date</h3>
+                        <p>Black Panther 2</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/jagiya4.jpg" alt="Anniversary">
+                        <h3>Anniversary</h3>
+                        <p>Dinner</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/jagiya3.jpg" alt="Beach Date">
+                        <h3>Beach Date</h3>
+                        <p>Healing at the beach</p>
+                    </div>
+                </div>
+            </section>  
+            
+            <section id="Food">
+                <h2> Food </h2>
+                <div class="favorites">
+                    <div class="favorite-item">
+                        <img src="images/canai.jpg" alt="Roti Canai Telur Cheese">
+                        <h3>Lepak Food</h3>
+                        <p>Roti Canai Telur Cheese</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/food2.jpg" alt="Dinner">
+                        <h3>Steak</h3>
+                        <p>Portico</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/food1.jpg" alt="Ice Cream Chicken Chop">
+                        <h3>Ice Cream Chicken Chop</h3>
+                        <p>Sharing</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/food3.jpg" alt="Dot Waffle">
+                        <h3>Belgian Waffle Ice Cream + Oreo Milo</h3>
+                        <p>Dot Waffle</p>
+                    </div>
+                </div>
+            </section>     
+            
+            <section id="Babies">
+                <h2> Babies </h2>
+                <div class="favorites">
+                    <div class="favorite-item">
+                        <img src="images/aira.jpg" alt="Aira">
+                        <h3>Baby Aira</h3>
+                        <p>Youngest Cousin</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/musa.jpg" alt="Musa">
+                        <h3>Musa</h3>
+                        <p>Nephew</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/daiyan.jpg" alt="Dayyan">
+                        <h3>Daiyan</h3>
+                        <p>Nephew</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="images/rizky.jpg" alt="Rizky">
+                        <h3>Rizky</h3>
+                        <p>Nephew</p>
+                    </div>
+                </div>
+            </section>     
+
+
+        </main>
+
+        <footer>
+            <p>© 2024 Amirul Hasyim </p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Fade in images and sections on scroll
+        window.addEventListener('scroll', function() {
+            const introImg = document.querySelector('.intro-section img');
+            const sections = document.querySelectorAll('section');
+            
+            // Fade in image
+            if (isInViewport(introImg)) {
+                introImg.style.opacity = 1;
+            }
+
+            // Fade in sections
+            sections.forEach(section => {
+                if (isInViewport(section)) {
+                    section.style.opacity = 1;
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        function isInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return rect.top <= window.innerHeight && rect.bottom >= 0;
+        }
+    </script>
+</body>
+</html>
